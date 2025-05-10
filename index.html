@@ -1,0 +1,34 @@
+<!-- index.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Ads Display</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- Example: PropellerAds script -->
+  <script data-cfasync="false" async src="https://informer.propellerads.com/pub/informer.js"></script>
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      background: #f9f9f9;
+    }
+  </style>
+</head>
+<body>
+  <div id="propellerads-informer"></div>
+  <script>
+    informer_client = "YOUR_ZONE_ID"; // Replace with your real Zone ID
+    informer_height = 250;
+    informer_width = 300;
+    (function() {
+      var pa = document.createElement('script');
+      pa.type = 'text/javascript';
+      pa.async = true;
+      pa.src = 'https://informer.propellerads.com/pub/informer.js';
+      var s = document.getElementsByTagName('script')[0];
+      s.parentNode.insertBefore(pa, s);
+    })();
+  </script>
+</body>
+</html>
